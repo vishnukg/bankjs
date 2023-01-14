@@ -1,5 +1,4 @@
 export default (account, amount) => {
-    console.log(account);
     if (amount < 0) {
         throw new Error('You cannot withdraw negative amount');
     }

@@ -36,3 +36,20 @@ tap.test(
         t.end();
     }
 );
+
+tap.test('Cannot withdraw negative money from account', (t) => {
+    const account = {
+        accountId: '123',
+        customer: {
+            id: '4563',
+            name: 'john',
+            email: 'john@email.com'
+        },
+        balance: 100
+    };
+    t.throws(
+        () => withdraw(account, -150),
+        'You cannot withdraw negative amount'
+    );
+    t.end();
+});
