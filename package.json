@@ -1,0 +1,16 @@
+{
+    "name": "bankjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "test": "tap"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tap": "^16.3.3"
+    }
+}
