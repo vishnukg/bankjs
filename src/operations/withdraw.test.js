@@ -16,3 +16,23 @@ tap.test('Withdraw money from an account', (t) => {
     t.equal(result.balance, 0);
     t.end();
 });
+
+tap.test(
+    "Prevent customer from withdrawing more money that what's available",
+    (t) => {
+        const account = {
+            accountId: '123',
+            customer: {
+                id: '4563',
+                name: 'john',
+                email: 'john@email.com'
+            },
+            balance: 100
+        };
+        t.throws(
+            () => withdraw(account, 140),
+            'Not enough money to withdraw from the account'
+        );
+        t.end();
+    }
+);
