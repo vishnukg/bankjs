@@ -13,6 +13,6 @@ tap.test('Withdraw money from an account', (t) => {
     };
 
     const result = withdraw(account, 100);
-    t.equal(result, 0);
+    t.equal(result.balance, 0);
     t.end();
 });
