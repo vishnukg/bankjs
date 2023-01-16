@@ -1,7 +1,10 @@
 import withdraw from './operations/withdraw/withdraw.js';
 
-export * from './operations/withdraw/index.js';
-
+/**
+ * @type {{id: string, customer: {id: string,
+ * name: string,
+ * email: string}, balance: number}}
+ */
 const account = {
     id: '424',
     customer: {
