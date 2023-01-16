@@ -5,7 +5,9 @@
     "main": "src/index.js",
     "type": "module",
     "scripts": {
-        "test": "tap"
+        "test": "tap",
+        "pretty": "prettier --write \"src/**\"",
+        "fmt": "eslint src/**"
     },
     "keywords": [],
     "author": "",
