@@ -1,4 +1,4 @@
-import { accWithdraw } from './operations/index.js';
+import { withdraw } from './account/index.js';
 
 /**
  * @type {{id: string, customer: {id: string,
@@ -14,4 +14,4 @@ const account = {
     },
     balance: 100
 };
-console.log(accWithdraw(account, 100));
+console.log(withdraw(account, 100));

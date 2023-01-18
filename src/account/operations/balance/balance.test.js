@@ -1,5 +1,5 @@
 import tap from 'tap';
-import balance from './balance.js';
+import { balance } from './balance.js';
 
 tap.test('View available balance of a customer', (t) => {
     const account = {
