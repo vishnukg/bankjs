@@ -1,1 +1,1 @@
-export * from './account.js';
+export * from './accBalance.js';

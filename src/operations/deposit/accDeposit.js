@@ -1,4 +1,4 @@
-export default (account, amount) => {
+export function accDeposit(account, amount) {
     if (amount < 0) {
         throw new Error('You cannot deposit negative amount');
     }
@@ -7,4 +7,4 @@ export default (account, amount) => {
         ...account,
         balance: account.balance + amount
     };
-};
+}

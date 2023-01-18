@@ -1,4 +1,4 @@
-export default (account, amount) => {
+export function accWithdraw(account, amount) {
     if (amount < 0) {
         throw new Error('You cannot withdraw negative amount');
     }
@@ -11,4 +11,4 @@ export default (account, amount) => {
         ...account,
         balance: account.balance - amount
     };
-};
+}
