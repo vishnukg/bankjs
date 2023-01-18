@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { accWithdraw } from './accWithdraw.js';
+import withdraw from './withdraw.js';
 
 tap.test('Withdraw money from an account', (t) => {
     const account = {
@@ -12,7 +12,7 @@ tap.test('Withdraw money from an account', (t) => {
         balance: 100
     };
 
-    const result = accWithdraw(account, 100);
+    const result = withdraw(account, 100);
     t.equal(result.balance, 0);
     t.end();
 });
@@ -30,7 +30,7 @@ tap.test(
             balance: 100
         };
         t.throws(
-            () => accWithdraw(account, 140),
+            () => withdraw(account, 140),
             'Not enough money to withdraw from the account'
         );
         t.end();
@@ -48,7 +48,7 @@ tap.test('Cannot withdraw negative money from account', (t) => {
         balance: 100
     };
     t.throws(
-        () => accWithdraw(account, -150),
+        () => withdraw(account, -150),
         'You cannot withdraw negative amount'
     );
     t.end();

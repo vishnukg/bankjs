@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { accDeposit } from './accDeposit.js';
+import deposit from './deposit.js';
 
 tap.test('Dont allow negative deposits', (t) => {
     const account = {
@@ -12,7 +12,7 @@ tap.test('Dont allow negative deposits', (t) => {
         balance: 100
     };
     t.throws(
-        () => accDeposit(account, -100),
+        () => deposit(account, -100),
         'You cannot deposit negative amount'
     );
     t.end();

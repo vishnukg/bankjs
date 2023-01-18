@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { accBalance } from './accBalance.js';
+import balance from './balance.js';
 
 tap.test('View available balance of a customer', (t) => {
     const account = {
@@ -12,7 +12,7 @@ tap.test('View available balance of a customer', (t) => {
         balance: 100
     };
 
-    const result = accBalance(account, 100);
+    const result = balance(account, 100);
     console.log(result);
     t.equal(result, 100);
     t.end();
