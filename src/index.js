@@ -15,12 +15,14 @@ const account = {
     balance: 100
 };
 
+console.log(`Initial State: ${JSON.stringify(account)}`);
 const withdrawRes = withdraw(account, 100);
-console.log(withdrawRes);
+console.log(`withdrawn State: ${JSON.stringify(withdrawRes)}`);
 
 const depositRes = deposit(withdrawRes, 300);
+console.log(`deposited State: ${JSON.stringify(depositRes)}`);
 
 const bank = {
     accounts: [depositRes]
 };
-console.log(balance(bank));
+console.log(`Final bank balance: ${balance(bank)}`);
