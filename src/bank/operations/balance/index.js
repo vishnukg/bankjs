@@ -1,1 +1,1 @@
-export * from './balance.js';
+export { default as balance } from './balance.js';

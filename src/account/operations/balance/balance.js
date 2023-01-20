@@ -1,3 +1,3 @@
-export function balance(account) {
+export default (account) => {
     return account.balance;
-}
+};

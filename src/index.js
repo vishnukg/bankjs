@@ -1,5 +1,5 @@
-import { withdraw } from './account/index.js';
-
+import { deposit, withdraw } from './account/index.js';
+import { balance } from './bank/index.js';
 /**
  * @type {{id: string, customer: {id: string,
  * name: string,
@@ -14,4 +14,13 @@ const account = {
     },
     balance: 100
 };
-console.log(withdraw(account, 100));
+
+const withdrawRes = withdraw(account, 100);
+console.log(withdrawRes);
+
+const depositRes = deposit(withdrawRes, 300);
+
+const bank = {
+    accounts: [depositRes]
+};
+console.log(balance(bank));

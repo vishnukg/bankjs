@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { deposit } from './deposit.js';
+import deposit from './deposit.js';
 
 tap.test('Dont allow negative deposits', (t) => {
     const account = {

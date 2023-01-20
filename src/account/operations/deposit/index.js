@@ -1,1 +1,1 @@
-export * from './deposit.js';
+export { default as deposit } from './deposit.js';

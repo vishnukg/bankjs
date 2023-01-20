@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { withdraw } from './withdraw.js';
+import withdraw from './withdraw.js';
 
 tap.test('Withdraw money from an account', (t) => {
     const account = {
