@@ -1,7 +1,7 @@
-import tap from 'tap';
-import balance from './balance.js';
+import balance from './balance.mjs';
+import { expect , test} from "vitest"
 
-tap.test('View available balance of a customer', (t) => {
+test('View available balance of a customer', () => {
     const account = {
         accountId: '123',
         customer: {
@@ -13,7 +13,5 @@ tap.test('View available balance of a customer', (t) => {
     };
 
     const result = balance(account, 100);
-    console.log(result);
-    t.equal(result, 100);
-    t.end();
+    expect(result).toBe(100)
 });

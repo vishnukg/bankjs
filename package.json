@@ -2,11 +2,10 @@
     "name": "bankjs",
     "version": "1.0.0",
     "description": "",
-    "main": "src/index.js",
-    "type": "module",
+    "main": "src/index.mjs",
     "scripts": {
-        "start": "node src/index.js",
-        "test": "c8 tap --no-coverage",
+        "start": "node src/index.mjs",
+        "test": "vitest run --coverage",
         "pretty": "prettier --write \"src/**\"",
         "fmt": "eslint src/**"
     },
@@ -14,11 +13,11 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@vitest/coverage-v8": "^0.32.4",
         "jsdoc": "^4.0.2",
-        "tap": "^1.0.10"
+        "vitest": "^0.32.4"
     },
     "overrides": {
-        "semver": "~7.5.2",
-        "diff": "~3.5.0"
+        "semver": "^7.5.3"
     }
 }
