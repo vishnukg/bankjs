@@ -1,32 +1,32 @@
-import {expect, test} from "vitest"
-import balance from './balance.mjs';
+import { expect, test } from "vitest";
+import balance from "./balance.mjs";
 
-test('View available balance of the bank', () => {
+test("View available balance of the bank", () => {
     const account1 = {
-        accountId: '123',
+        accountId: "123",
         customer: {
-            id: '4563',
-            name: 'John',
-            email: 'john@email.com'
+            id: "4563",
+            name: "John",
+            email: "john@email.com"
         },
         balance: 100
     };
 
     const account2 = {
-        accountId: '3234',
+        accountId: "3234",
         customer: {
-            id: '38883',
-            name: 'Jacob',
-            email: 'jacob@email.com'
+            id: "38883",
+            name: "Jacob",
+            email: "jacob@email.com"
         },
         balance: 100
     };
 
     const bank = {
-        name: 'The Bank',
+        name: "The Bank",
         accounts: [account1, account2]
     };
 
     const result = balance(bank);
-    expect(result).toBe(200)
+    expect(result).toBe(200);
 });
