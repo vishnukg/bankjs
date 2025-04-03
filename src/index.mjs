@@ -1,16 +1,16 @@
-import { deposit, withdraw } from './account/index.mjs';
-import { balance } from './bank/index.mjs';
+import { deposit, withdraw } from "./account/index.mjs";
+import { balance } from "./bank/index.mjs";
 /**
  * @type {{id: string, customer: {id: string,
  * name: string,
  * email: string}, balance: number}}
  */
 const account = {
-    id: '424',
+    id: "424",
     customer: {
-        id: '333',
-        name: 'John',
-        email: 'John@email'
+        id: "333",
+        name: "John",
+        email: "John@email"
     },
     balance: 100
 };
