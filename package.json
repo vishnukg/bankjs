@@ -13,10 +13,13 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@vitest/coverage-v8": "^4.0.6",
+        "@eslint/js": "^9.39.1",
+        "@vitest/coverage-v8": "^4.0.14",
+        "eslint": "^9.39.1",
+        "globals": "^16.5.0",
         "jsdoc": "^4.0.5",
-        "prettier": "^3.6.2",
-        "vitest": "^4.0.6"
+        "prettier": "^3.7.2",
+        "vitest": "^4.0.14"
     },
     "overrides": {
         "semver": "^7.5.3"
