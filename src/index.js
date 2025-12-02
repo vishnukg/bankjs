@@ -1,5 +1,5 @@
-import { deposit, withdraw } from "./account/index.mjs";
-import { balance } from "./bank/index.mjs";
+import { deposit, withdraw } from "./account/index.js";
+import { balance } from "./bank/index.js";
 /**
  * @type {{id: string, customer: {id: string,
  * name: string,

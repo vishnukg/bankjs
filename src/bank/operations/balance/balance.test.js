@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import balance from "./balance.mjs";
+import balance from "./balance.js";
 
 test("View available balance of the bank", () => {
     const account1 = {

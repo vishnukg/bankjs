@@ -1,5 +1,5 @@
 import { expect, describe, it } from "vitest";
-import deposit from "./deposit.mjs";
+import deposit from "./deposit.js";
 
 describe("deposit", () => {
     it("should add the amount to the account balance", () => {

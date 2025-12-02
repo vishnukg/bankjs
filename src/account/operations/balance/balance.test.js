@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import balance from "./balance.mjs";
+import balance from "./balance.js";
 
 describe("balance operation", () => {
     it("returns the balance when account has balance property", () => {

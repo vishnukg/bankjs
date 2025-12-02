@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import withdraw from "./withdraw.mjs";
+import withdraw from "./withdraw.js";
 
 test("Withdraw money from an account", () => {
     const account = {
