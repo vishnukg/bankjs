@@ -8,13 +8,13 @@ export default defineConfig({
             "**/dist/**",
             "**/build/**",
             "**/coverage/**",
-            "**/index.mjs",
+            "**/index.js",
             "**/.*"
         ],
         coverage: {
             reporter: ["text", "lcov"],
-            include: ["src/**/*.mjs"], // Only include files that are imported by tests
-            exclude: ["**/*.test.mjs", "**/__tests__/**"],
+            include: ["src/**/*.js"], // Only include files that are imported by tests
+            exclude: ["**/*.test.js", "**/__tests__/**"],
             all: false // Only instrument files that are actually tested
         }
     }
