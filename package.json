@@ -15,12 +15,12 @@
     "license": "ISC",
     "devDependencies": {
         "@eslint/js": "^9.39.1",
-        "@vitest/coverage-v8": "^4.0.14",
+        "@vitest/coverage-v8": "^4.0.15",
         "eslint": "^9.39.1",
         "globals": "^16.5.0",
         "jsdoc": "^4.0.5",
-        "prettier": "^3.7.3",
-        "vitest": "^4.0.14"
+        "prettier": "^3.7.4",
+        "vitest": "^4.0.15"
     },
     "overrides": {
         "semver": "^7.5.3"
