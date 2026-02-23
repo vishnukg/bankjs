@@ -14,8 +14,8 @@ export default defineConfig({
         coverage: {
             reporter: ["text", "lcov"],
             include: ["src/**/*.js"], // Only include files that are imported by tests
-            exclude: ["**/*.test.js", "**/__tests__/**"],
-            all: false // Only instrument files that are actually tested
+            exclude: ["**/*.test.js", "**/__tests__/**", "**/index.js"],
+            all: false // Only show files with statements (don't include un-imported files)
         }
     }
 });
