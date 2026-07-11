@@ -15,14 +15,17 @@
     "license": "ISC",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
-        "@vitest/coverage-v8": "^4.1.9",
-        "eslint": "^10.6.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "eslint": "^10.7.0",
         "globals": "^17.7.0",
         "jsdoc": "^4.0.5",
-        "prettier": "^3.9.4",
-        "vitest": "^4.1.9"
+        "prettier": "^3.9.5",
+        "vitest": "^4.1.10"
     },
     "overrides": {
         "semver": "^7.5.3"
+    },
+    "allowScripts": {
+        "fsevents@2.3.3": true
     }
 }
